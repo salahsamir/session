@@ -57,7 +57,7 @@ export const logout=errorHandel(
 )
 export const getall=errorHandel(
     async(req,res,next)=>{
-        const {id}=req.user
+        // const {id}=req.user
         const user=await User.find()
         return res.status(200).json({message:"done successfuly",user})
 
